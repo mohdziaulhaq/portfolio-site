@@ -1,25 +1,157 @@
-.site-header{
-    background-color: #da9844;
-    color: aliceblue;
-    height: 100vh;
-    font-family: monospace;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.site-header-content{
-    margin: 10px;
-}
-.profile-pic{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    align-self: center;
-    box-shadow: #985a0a 2px 5px 5px;
-}
-
 body{
+    padding: 0;
     margin: 0;
+    background-color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+nav{
+    margin: 1rem 3rem 0rem 1rem;
+    padding: 0 5rem;
+    color: rgb(232, 226, 226);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span{
+    font-size: 22px;
+    margin-top: 22px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list{
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+.main{
+    color: rgb(232, 226, 226);
+    margin: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    
+}
+
+.main-left{
+    line-height: 35px;
+}
+
+.main-left h1{
+    font-size: 3em;
+}
+.main-left span{
+    font-size: 2.5rem;
+}
+
+.main-right img{
+    width: 25em;
+}
+
+.hire{
+    margin: 1rem 0;
+}
+
+.hire button:nth-child(1){
+    background-color: rgb(102, 189, 136);
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border: 3px solid rgb(102, 189, 136);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hire button:nth-child(2){
+    margin-left: 20px;
+    background-color: transparent;
+    color: rgb(102, 189, 136);
+    padding: 1rem 2.5rem;
+    border: 3px solid rgb(102, 189, 136);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.projects-headline h1{
+    color: #fff;
+    margin: 3rem 5rem;
+    font-size: 40px;
+}
+
+
+#projects{
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 2rem;
+}
+
+.project img{
+    width: 350px;
+    height: 300px;
+    
+}
+
+.project-content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.project-content a:first-of-type button{
+    background-color: rgb(102, 189, 136);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: 3px solid rgb(102, 189, 136);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.project-content a:last-of-type button{
+    margin-left: 15px;
+    background-color: transparent;
+    color: rgb(102, 189, 136);
+    padding: 0.5rem 1.5rem;
+    border: 3px solid rgb(102, 189, 136);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* .contact-headline h1{
+    color: #fff;
+    margin: 5rem 5rem 0rem 5rem;
+    font-size: 30px;
+}
+
+.contact-left{
+    margin: 0rem 5rem;
+} */
+
+
+footer{
+    background-color: rgb(102, 189, 136);
+    margin-top: 10rem ;
+}
+
+.footer-content{
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{
+    color: #000;
 }
